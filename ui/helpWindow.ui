@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Frame</class>
+ <widget class="QFrame" name="Frame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>667</width>
+    <height>536</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_4">
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Minimum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>31</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_16">
+     <item>
+      <spacer name="verticalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>21</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>31</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="ToolButton" name="panHelpPb">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../jixinRSDM/yoyiResource/icoRSAI.qrc">
+             <normaloff>:/img/icoNew/gis/gis_pan.png</normaloff>:/img/icoNew/gis/gis_pan.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="BodyLabel" name="BodyLabel">
+           <property name="text">
+            <string>漫游地图工具(Q)</string>
+           </property>
+           <property name="pixelFontSize" stdset="0">
+            <number>13</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="ToolButton" name="magicHelpPb">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../jixinRSDM/yoyiResource/icoRSAI.qrc">
+             <normaloff>:/img/icoNew/infer/clsfy_magic.png</normaloff>:/img/icoNew/infer/clsfy_magic.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_2">
+           <property name="text">
+            <string>魔术棒工具(W)</string>
+           </property>
+           <property name="pixelFontSize" stdset="0">
+            <number>13</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="ToolButton" name="polygonHelpPb">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../jixinRSDM/yoyiResource/icoRSAI.qrc">
+             <normaloff>:/img/icoNew/gis/edit_polygon.png</normaloff>:/img/icoNew/gis/edit_polygon.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_3">
+           <property name="text">
+            <string>面要素工具(E)</string>
+           </property>
+           <property name="pixelFontSize" stdset="0">
+            <number>13</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="ToolButton" name="rectangleHelpPb">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../jixinRSDM/yoyiResource/icoRSAI.qrc">
+             <normaloff>:/img/icoNew/gis/edit_rectangle.png</normaloff>:/img/icoNew/gis/edit_rectangle.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_4">
+           <property name="text">
+            <string>矩形要素工具(R)</string>
+           </property>
+           <property name="pixelFontSize" stdset="0">
+            <number>13</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="ToolButton" name="circleHelpPb">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../jixinRSDM/yoyiResource/icoRSAI.qrc">
+             <normaloff>:/img/icoNew/gis/edit_circle.png</normaloff>:/img/icoNew/gis/edit_circle.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_5">
+           <property name="text">
+            <string>圆形要素工具(T)</string>
+           </property>
+           <property name="pixelFontSize" stdset="0">
+            <number>13</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>31</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="ToolButton" name="selectHelpPb">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../jixinRSDM/yoyiResource/icoRSAI.qrc">
+             <normaloff>:/img/icoNew/gis/shp_select_multi.png</normaloff>:/img/icoNew/gis/shp_select_multi.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_6">
+           <property name="text">
+            <string>选择要素工具(S)</string>
+           </property>
+           <property name="pixelFontSize" stdset="0">
+            <number>13</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <widget class="ToolButton" name="deleteHelpPb">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../jixinRSDM/yoyiResource/icoRSAI.qrc">
+             <normaloff>:/img/icoNew/gis/shp_delete_select.png</normaloff>:/img/icoNew/gis/shp_delete_select.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_7">
+           <property name="text">
+            <string>删除要素(DEL)</string>
+           </property>
+           <property name="pixelFontSize" stdset="0">
+            <number>13</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <widget class="ToolButton" name="clearHelpPb">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../jixinRSDM/yoyiResource/icoRSAI.qrc">
+             <normaloff>:/img/icoNew/gis/shp_cleart_select.png</normaloff>:/img/icoNew/gis/shp_cleart_select.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_8">
+           <property name="text">
+            <string>取消选中</string>
+           </property>
+           <property name="pixelFontSize" stdset="0">
+            <number>13</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <item>
+          <widget class="ToolButton" name="mergeHelpPb">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../jixinRSDM/yoyiResource/icoRSAI.qrc">
+             <normaloff>:/img/icoNew/gis/shp_merge.png</normaloff>:/img/icoNew/gis/shp_merge.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_9">
+           <property name="text">
+            <string>合并要素(F1)</string>
+           </property>
+           <property name="pixelFontSize" stdset="0">
+            <number>13</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_10">
+         <item>
+          <widget class="ToolButton" name="createExtentHelpPb">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../jixinRSDM/yoyiResource/icoRSAI.qrc">
+             <normaloff>:/img/icoNew/gis/shp_extent.png</normaloff>:/img/icoNew/gis/shp_extent.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_10">
+           <property name="text">
+            <string>创建边框(F2)</string>
+           </property>
+           <property name="pixelFontSize" stdset="0">
+            <number>13</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>21</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>31</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_14">
+         <item>
+          <widget class="ToolButton" name="splitHelpPb">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../jixinRSDM/yoyiResource/icoRSAI.qrc">
+             <normaloff>:/img/icoNew/gis/shp_clip_polygon.png</normaloff>:/img/icoNew/gis/shp_clip_polygon.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_14">
+           <property name="text">
+            <string>剪切要素工具(Z)</string>
+           </property>
+           <property name="pixelFontSize" stdset="0">
+            <number>13</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_12">
+         <item>
+          <widget class="ToolButton" name="vertexHelpPb">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../jixinRSDM/yoyiResource/icoRSAI.qrc">
+             <normaloff>:/img/icoNew/gis/shp_vertexTool.png</normaloff>:/img/icoNew/gis/shp_vertexTool.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_12">
+           <property name="text">
+            <string>顶点编辑工具(X)</string>
+           </property>
+           <property name="pixelFontSize" stdset="0">
+            <number>13</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_13">
+         <item>
+          <widget class="ToolButton" name="reshapeHelpPb">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../jixinRSDM/yoyiResource/icoRSAI.qrc">
+             <normaloff>:/img/icoNew/gis/shp_clip_1.png</normaloff>:/img/icoNew/gis/shp_clip_1.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_13">
+           <property name="text">
+            <string>重塑要素工具(C)</string>
+           </property>
+           <property name="pixelFontSize" stdset="0">
+            <number>13</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_11">
+         <item>
+          <widget class="ToolButton" name="copyHelpPb">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../jixinRSDM/yoyiResource/icoRSAI.qrc">
+             <normaloff>:/img/icoNew/gis/shp_paste.png</normaloff>:/img/icoNew/gis/shp_paste.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_11">
+           <property name="text">
+            <string>复制要素工具(V)</string>
+           </property>
+           <property name="pixelFontSize" stdset="0">
+            <number>13</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_15">
+         <item>
+          <widget class="ToolButton" name="fillHoleHelpPb">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../jixinRSDM/yoyiResource/icoRSAI.qrc">
+             <normaloff>:/img/icoNew/gis/shp_fillhole.png</normaloff>:/img/icoNew/gis/shp_fillhole.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="BodyLabel" name="BodyLabel_15">
+           <property name="text">
+            <string>消除孔洞工具(B)</string>
+           </property>
+           <property name="pixelFontSize" stdset="0">
+            <number>13</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>21</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Minimum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>31</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ToolButton</class>
+   <extends>QToolButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>BodyLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../../jixinRSDM/yoyiResource/icoRSAI.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>selectCalcTemplateDialog</class>
+ <widget class="QDialog" name="selectCalcTemplateDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>831</width>
+    <height>676</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>指数计算公式</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QScrollArea" name="shpSingleRenderScrollArea_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="shpSingleRenderScrollAreaWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-155</y>
+        <width>794</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_27">
+         <item>
+          <widget class="SubtitleLabel" name="SubtitleLabel_6">
+           <property name="text">
+            <string>Set Up(设定波段)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_21">
+         <layout class="QHBoxLayout" name="horizontalLayout_28">
+          <item>
+           <widget class="SubtitleLabel" name="SubtitleLabel">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>RED(红波段）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ComboBox" name="redBandCb"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_22">
+         <layout class="QHBoxLayout" name="horizontalLayout_29">
+          <item>
+           <widget class="SubtitleLabel" name="SubtitleLabel_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>GREEN（绿波段）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ComboBox" name="greenBandCb"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_23">
+         <layout class="QHBoxLayout" name="horizontalLayout_30">
+          <item>
+           <widget class="SubtitleLabel" name="SubtitleLabel_7">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>BLUE（蓝波段）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ComboBox" name="blueBandCb"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_24">
+         <layout class="QHBoxLayout" name="horizontalLayout_31">
+          <item>
+           <widget class="SubtitleLabel" name="SubtitleLabel_8">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>NIR（近红外波段）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ComboBox" name="nirBandCb"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_25">
+         <layout class="QHBoxLayout" name="horizontalLayout_32">
+          <item>
+           <widget class="SubtitleLabel" name="SubtitleLabel_9">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>RED EDGE（红边波段）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ComboBox" name="redEdgeBandCb"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_26">
+         <layout class="QHBoxLayout" name="horizontalLayout_33">
+          <item>
+           <widget class="SubtitleLabel" name="SubtitleLabel_10">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>S1（中红外1波段）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ComboBox" name="s1BandCb"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_27">
+         <layout class="QHBoxLayout" name="horizontalLayout_34">
+          <item>
+           <widget class="SubtitleLabel" name="SubtitleLabel_11">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>SWIR（短波红外波段）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ComboBox" name="swirBandCb"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="shpSingleRenderScrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="shpSingleRenderScrollAreaWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-730</y>
+        <width>794</width>
+        <height>1092</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_10">
+         <item>
+          <widget class="SubtitleLabel" name="SubtitleLabel_5">
+           <property name="text">
+            <string>Vegetation Index(植被指数)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_11">
+         <layout class="QHBoxLayout" name="horizontalLayout_18">
+          <item>
+           <widget class="BodyLabel" name="BodyLabel_3">
+            <property name="text">
+             <string>归一化差异植被指数 (NDVI)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PrimaryPushButton" name="ndviPb">
+            <property name="minimumSize">
+             <size>
+              <width>400</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>(NIR - RED) / (NIR + RED) </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_3">
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="BodyLabel" name="BodyLabel_6">
+            <property name="text">
+             <string>红边叶绿素植被指数 (RECl)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PrimaryPushButton" name="reclPb">
+            <property name="minimumSize">
+             <size>
+              <width>400</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>(NIR / RED) - 1</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_5">
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <widget class="BodyLabel" name="BodyLabel_8">
+            <property name="text">
+             <string>归一化差异红边植被指数 (NDRE)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PrimaryPushButton" name="ndrePb">
+            <property name="minimumSize">
+             <size>
+              <width>470</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>(NIR - RED EDGE) / (NIR + RED EDGE)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_6">
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <widget class="BodyLabel" name="BodyLabel_9">
+            <property name="text">
+             <string>改良土壤调整植被指数 (MSAVI)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PrimaryPushButton" name="msaviPb">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>(2*(NIR+1)-sqrt((2*NIR+1)^2-8*(NIR-RED)))/2</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_4">
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <widget class="BodyLabel" name="BodyLabel_7">
+            <property name="text">
+             <string>绿色归一化差异植被指数 (GNDVI)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PrimaryPushButton" name="gndviPb">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>(NIR - GREEN) / (NIR + GREEN)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_10">
+         <layout class="QHBoxLayout" name="horizontalLayout_17">
+          <item>
+           <widget class="BodyLabel" name="BodyLabel_13">
+            <property name="text">
+             <string>土壤调节植被指数 (SAVI)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PrimaryPushButton" name="saviPb">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>((NIR - RED) / (NIR + RED + L)) * (1 + L)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_12">
+         <layout class="QHBoxLayout" name="horizontalLayout_19">
+          <item>
+           <widget class="BodyLabel" name="BodyLabel_14">
+            <property name="text">
+             <string>优化的土壤调节植被指数 (OSAVI)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PrimaryPushButton" name="osaviPb">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>(NIR - RED) / (NIR + RED + 0.16)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_13">
+         <layout class="QHBoxLayout" name="horizontalLayout_20">
+          <item>
+           <widget class="BodyLabel" name="BodyLabel_15">
+            <property name="text">
+             <string>耐大气植被指数 (ARVI)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PrimaryPushButton" name="arviPb">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>(NIR-(2*RED)+BLUE)/(NIR+(2*RED)+BLUE)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_14">
+         <layout class="QHBoxLayout" name="horizontalLayout_21">
+          <item>
+           <widget class="BodyLabel" name="BodyLabel_16">
+            <property name="text">
+             <string>增强植被指数 (EVI)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PrimaryPushButton" name="eviPb">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>2.5*((NIR-RED)/((NIR)+(C1*RED)-(C2*BLUE)+L))</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_18">
+         <layout class="QHBoxLayout" name="horizontalLayout_24">
+          <item>
+           <widget class="BodyLabel" name="BodyLabel_20">
+            <property name="text">
+             <string>结构不敏感色素植被指数 (SIPI)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PrimaryPushButton" name="sipiPb">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>(NIR - BLUE) / (NIR - RED)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_19">
+         <layout class="QHBoxLayout" name="horizontalLayout_25">
+          <item>
+           <widget class="BodyLabel" name="BodyLabel_21">
+            <property name="text">
+             <string>绿色叶绿素植被指数 (GCI)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PrimaryPushButton" name="gciPb">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>NIR / GREEN - 1</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="SubtitleLabel" name="SubtitleLabel_2">
+           <property name="text">
+            <string>(Water Body Index)水体指数</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_2">
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <widget class="BodyLabel" name="BodyLabel_5">
+            <property name="text">
+             <string>归一化差值水体指数(NDWI)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PrimaryPushButton" name="ndwiPb">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>(GREEN - NIR) / (GREEN + NIR)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_7">
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <item>
+           <widget class="BodyLabel" name="BodyLabel_10">
+            <property name="text">
+             <string>改进归一化差值水体指数(MNDWI)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PrimaryPushButton" name="mndwiPb">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>(GREEN - S1) / (GREEN + S1)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_8">
+         <layout class="QHBoxLayout" name="horizontalLayout_14">
+          <item>
+           <widget class="BodyLabel" name="BodyLabel_11">
+            <property name="text">
+             <string>归一化差值水分指数（NDMI）</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PrimaryPushButton" name="ndmiPb">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>(NIR - S1) / (NIR + S1)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="SubtitleLabel" name="SubtitleLabel_4">
+           <property name="text">
+            <string>Other(其他指数)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_15">
+         <layout class="QHBoxLayout" name="horizontalLayout_16">
+          <item>
+           <widget class="BodyLabel" name="BodyLabel_17">
+            <property name="text">
+             <string>可见大气阻力指数 (VARI)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PrimaryPushButton" name="variPb">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>(GREEN - RED) / (GREEN + RED - BLUE)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_17">
+         <layout class="QHBoxLayout" name="horizontalLayout_23">
+          <item>
+           <widget class="BodyLabel" name="BodyLabel_19">
+            <property name="text">
+             <string>标准化燃烧率 (NBR)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PrimaryPushButton" name="nbrPb">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>(NIR - SWIR) / (NIR + SWIR)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="CardWidget" name="CardWidget_20">
+         <layout class="QHBoxLayout" name="horizontalLayout_26">
+          <item>
+           <widget class="BodyLabel" name="BodyLabel_22">
+            <property name="text">
+             <string>归一化差值雪指数 (NDSI)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PrimaryPushButton" name="ndsiPb">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>(GREEN - SWIR1) / (GREEN + SWIR1)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ComboBox</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>PushButton</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>PrimaryPushButton</class>
+   <extends>PushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>CardWidget</class>
+   <extends>QFrame</extends>
+   <header>qfluentwidgets</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BodyLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>SubtitleLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

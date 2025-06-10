@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>homeLocalMainWindow</class>
+ <widget class="QMainWindow" name="homeLocalMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1682</width>
+    <height>327</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HOME</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <property name="leftMargin">
+     <number>2</number>
+    </property>
+    <property name="topMargin">
+     <number>2</number>
+    </property>
+    <property name="rightMargin">
+     <number>2</number>
+    </property>
+    <property name="bottomMargin">
+     <number>2</number>
+    </property>
+    <item>
+     <widget class="TransparentToolButton" name="showLayerDockPb">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="icon">
+       <iconset resource="../yoyirs.qrc">
+        <normaloff>:/img/resources/menu_expandH.png</normaloff>:/img/resources/menu_expandH.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="TransparentToolButton" name="showToolboxDockPb">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="icon">
+       <iconset resource="../yoyirs.qrc">
+        <normaloff>:/img/resources/more.png</normaloff>:/img/resources/more.png</iconset>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QDockWidget" name="dockWidgetToolbox">
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="features">
+    <set>QDockWidget::DockWidgetClosable</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>Toolbox</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="toolboxDockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>4</number>
+     </property>
+     <property name="leftMargin">
+      <number>4</number>
+     </property>
+     <property name="topMargin">
+      <number>4</number>
+     </property>
+     <property name="rightMargin">
+      <number>4</number>
+     </property>
+     <property name="bottomMargin">
+      <number>4</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="toolboxLayout"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidgetTop">
+   <property name="features">
+    <set>QDockWidget::NoDockWidgetFeatures</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::TopDockWidgetArea</set>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>4</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_4">
+    <layout class="QVBoxLayout" name="verticalLayout_8">
+     <property name="spacing">
+      <number>4</number>
+     </property>
+     <property name="leftMargin">
+      <number>4</number>
+     </property>
+     <property name="topMargin">
+      <number>4</number>
+     </property>
+     <property name="rightMargin">
+      <number>4</number>
+     </property>
+     <property name="bottomMargin">
+      <number>4</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="SegmentedWidget" name="SegmentedWidget">
+         <property name="minimumSize">
+          <size>
+           <width>190</width>
+           <height>33</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="commonPage">
+        <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <property name="spacing">
+          <number>4</number>
+         </property>
+         <property name="leftMargin">
+          <number>12</number>
+         </property>
+         <property name="topMargin">
+          <number>4</number>
+         </property>
+         <property name="rightMargin">
+          <number>4</number>
+         </property>
+         <property name="bottomMargin">
+          <number>4</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_common"/>
+         </item>
+         <item>
+          <widget class="ComboBox" name="swipeLayersComboBox">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="SearchLineEdit" name="SearchLineEdit">
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>33</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="placeholderText">
+            <string>Enter the x,y coordinates</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="inferPage">
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <property name="spacing">
+          <number>4</number>
+         </property>
+         <property name="leftMargin">
+          <number>12</number>
+         </property>
+         <property name="topMargin">
+          <number>4</number>
+         </property>
+         <property name="rightMargin">
+          <number>4</number>
+         </property>
+         <property name="bottomMargin">
+          <number>4</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_20">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_21">
+             <item>
+              <layout class="QHBoxLayout" name="hl_segmentation_up">
+               <item>
+                <widget class="PushButton" name="croplandSegPb">
+                 <property name="text">
+                  <string>Cropland Extract</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/seg_cropland.png</normaloff>:/img/resources/infer/seg_cropland.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="PushButton" name="buildingSegPb">
+                 <property name="text">
+                  <string>Building Extract</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/seg_build.png</normaloff>:/img/resources/infer/seg_build.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="PushButton" name="roadSegPb">
+                 <property name="text">
+                  <string>Road Extract</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/seg_road.png</normaloff>:/img/resources/infer/seg_road.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="PushButton" name="dustNetSegPb">
+                 <property name="text">
+                  <string>DustNet Extract</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/seg_dustNet.png</normaloff>:/img/resources/infer/seg_dustNet.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="PushButton" name="steelTileSegPb">
+                 <property name="text">
+                  <string>SteelTile Extract</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/seg_steelTile.png</normaloff>:/img/resources/infer/seg_steelTile.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hl_segmentation_down">
+               <item>
+                <widget class="PushButton" name="waterSegPb">
+                 <property name="text">
+                  <string>Water Extract</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/seg_water.png</normaloff>:/img/resources/infer/seg_water.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="PushButton" name="treeSegPb">
+                 <property name="text">
+                  <string>Tree Extract</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/seg_tree.png</normaloff>:/img/resources/infer/seg_tree.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="PushButton" name="agriculturalFilmSegPb">
+                 <property name="text">
+                  <string>AgriculturalFilm Extract</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/seg_agriculturalFilm.png</normaloff>:/img/resources/infer/seg_agriculturalFilm.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="SplitPushButton" name="greenHousePb">
+                 <property name="text_" stdset="0">
+                  <string>GreenHouse Polygon Extract</string>
+                 </property>
+                 <property name="icon_" stdset="0">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/detec_green.png</normaloff>:/img/resources/infer/detec_green.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line_10">
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_24">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_25">
+             <item>
+              <layout class="QHBoxLayout" name="hl_detection_up">
+               <item>
+                <widget class="PushButton" name="stadiumDetPb">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="text">
+                  <string>Stadium Detec</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/detec_stadium.png</normaloff>:/img/resources/infer/detec_stadium.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="PushButton" name="towerCraneDetPb">
+                 <property name="text">
+                  <string>TowerCrane Detec</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/detec_towerCrane.png</normaloff>:/img/resources/infer/detec_towerCrane.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="PushButton" name="constructionSiteDetPb">
+                 <property name="text">
+                  <string>ConstructionSite Detec</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/detec_constructionSite.png</normaloff>:/img/resources/infer/detec_constructionSite.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hl_detection_down">
+               <item>
+                <widget class="PushButton" name="windTurbineDetPb">
+                 <property name="text">
+                  <string>WindTurbine Detec</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/detec_windMill.png</normaloff>:/img/resources/infer/detec_windMill.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="PushButton" name="substationDetPb">
+                 <property name="text">
+                  <string>Substation Detec</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/detec_Substation.png</normaloff>:/img/resources/infer/detec_Substation.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="PushButton" name="electricTowerDetPb">
+                 <property name="text">
+                  <string>ElectricTower Detec</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/detec_electricTower.png</normaloff>:/img/resources/infer/detec_electricTower.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_26">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_27">
+             <item>
+              <layout class="QHBoxLayout" name="hl_changedetection_up">
+               <item>
+                <widget class="PushButton" name="buildCDPb">
+                 <property name="text">
+                  <string>Building Cd</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/infer_buildCD.png</normaloff>:/img/resources/infer/infer_buildCD.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="PushButton" name="croplandCDPb">
+                 <property name="text">
+                  <string>Cropland Cd</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/infer_croplandCD.png</normaloff>:/img/resources/infer/infer_croplandCD.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="hl_changedetection_down">
+               <item>
+                <widget class="PushButton" name="treeCDPb">
+                 <property name="text">
+                  <string>Tree Cd</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../yoyirs.qrc">
+                   <normaloff>:/img/resources/infer/infer_treeCD.png</normaloff>:/img/resources/infer/infer_treeCD.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line_12">
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="processPage">
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <property name="spacing">
+          <number>4</number>
+         </property>
+         <property name="leftMargin">
+          <number>12</number>
+         </property>
+         <property name="topMargin">
+          <number>4</number>
+         </property>
+         <property name="rightMargin">
+          <number>4</number>
+         </property>
+         <property name="bottomMargin">
+          <number>4</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_process"/>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="trainPage">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>4</number>
+         </property>
+         <property name="leftMargin">
+          <number>12</number>
+         </property>
+         <property name="topMargin">
+          <number>4</number>
+         </property>
+         <property name="rightMargin">
+          <number>4</number>
+         </property>
+         <property name="bottomMargin">
+          <number>4</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_train"/>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_Tool">
+       <property name="spacing">
+        <number>4</number>
+       </property>
+       <property name="leftMargin">
+        <number>4</number>
+       </property>
+       <property name="topMargin">
+        <number>4</number>
+       </property>
+       <property name="rightMargin">
+        <number>4</number>
+       </property>
+       <property name="bottomMargin">
+        <number>4</number>
+       </property>
+       <item>
+        <spacer name="horizontalSpacer_9">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line_2">
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="midLineWidth">
+        <number>0</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidgetLayer">
+   <property name="minimumSize">
+    <size>
+     <width>220</width>
+     <height>82</height>
+    </size>
+   </property>
+   <property name="locale">
+    <locale language="English" country="UnitedStates"/>
+   </property>
+   <property name="features">
+    <set>QDockWidget::DockWidgetClosable</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>Layers</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="layerDockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="spacing">
+      <number>4</number>
+     </property>
+     <property name="leftMargin">
+      <number>4</number>
+     </property>
+     <property name="topMargin">
+      <number>4</number>
+     </property>
+     <property name="rightMargin">
+      <number>4</number>
+     </property>
+     <property name="bottomMargin">
+      <number>4</number>
+     </property>
+     <item>
+      <widget class="CommandBar" name="layerTreeCommandBar"/>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="layerTreeViewLayout"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ComboBox</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>PushButton</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>SplitPushButton</class>
+   <extends>QWidget</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>ToolButton</class>
+   <extends>QToolButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>TransparentToolButton</class>
+   <extends>ToolButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>Pivot</class>
+   <extends>QWidget</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>SegmentedWidget</class>
+   <extends>Pivot</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>SearchLineEdit</class>
+   <extends>LineEdit</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>CommandBar</class>
+   <extends>QFrame</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../yoyirs.qrc"/>
+ </resources>
+ <connections/>
+</ui>

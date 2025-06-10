@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>shpCommonProcessDialog</class>
+ <widget class="QDialog" name="shpCommonProcessDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Vector Post-Processing</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="inputFile_horizontalLayout">
+     <item>
+      <widget class="BodyLabel" name="inputFile_BodyLabel">
+       <property name="text">
+        <string>Input File</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="LineEdit" name="inputFile_LineEdit"/>
+     </item>
+     <item>
+      <widget class="ToolButton" name="inputFile_ToolButton"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="outputFile_horizontalLayout">
+     <item>
+      <widget class="BodyLabel" name="outputFile_BodyLabel">
+       <property name="text">
+        <string>Output File</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="LineEdit" name="outputFile_LineEdit"/>
+     </item>
+     <item>
+      <widget class="ToolButton" name="outputFile_ToolButton"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="tolerance_horizontalLayout">
+     <item>
+      <widget class="BodyLabel" name="tolerance_BodyLabel">
+       <property name="text">
+        <string>Simplify Tolerance</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="LineEdit" name="tolerance_LineEdit"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="minHoleArea_horizontalLayout">
+     <item>
+      <widget class="BodyLabel" name="minHoleArea_BodyLabel">
+       <property name="text">
+        <string>Minimum Hole Area</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="LineEdit" name="minHoleArea_LineEdit"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="removeArea_horizontalLayout">
+     <item>
+      <widget class="BodyLabel" name="removeArea_BodyLabel">
+       <property name="text">
+        <string>Minimum Polygon Area</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="LineEdit" name="removeArea_LineEdit"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ToolButton</class>
+   <extends>QToolButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>BodyLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>shpCommonProcessDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>shpCommonProcessDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

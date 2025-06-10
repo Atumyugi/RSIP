@@ -1,0 +1,24 @@
+BetterCardWidget>QLabel {
+    color: rgb(249, 249, 249);
+    background-color: rgba(0,0,0,0);
+}
+CardWidget>QLabel {
+    color: rgb(249, 249, 249);
+    background-color: rgba(0,0,0,0);
+}
+QLabel {
+    color: rgb(249, 249, 249);
+}
+QScrollArea {
+    background-color: rgb(39, 39, 39);
+    border: none;
+}
+QWidget{
+    background-color: rgb(39, 39, 39);
+}
+QWidget>QLabel {
+    color: rgb(249, 249, 249);
+}
+QStatusBar>QLabel {
+    color: rgb(249, 249, 249);
+}
